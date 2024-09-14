@@ -1,30 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins&display=swap');
 
 body {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   background-color: white;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
+
 header {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    padding: 10px;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+  align-items: center;
 }
 
 #logo {
   max-width: 150px;
-  align-items: left;
-
 }
 
 #menu {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  margin-left: auto;
+  padding: 0;
 }
 
 .link-menu {
@@ -36,17 +37,9 @@ header {
   border-radius: 5px;
 }
 
-.f {
-  background-color: #5b305a;
-}
-
-.l {
-  background-color: #e49756;
-}
-
-.m {
-  background-color: #e04b5a;
-}
+.f { background-color: #5b305a; }
+.l { background-color: #e49756; }
+.m { background-color: #e04b5a; }
 
 main {
   background-color: #333;
@@ -54,39 +47,102 @@ main {
 }
 
 h1, h2 {
-  font-family: 'Amatic SC';
+  font-family: 'Amatic SC', cursive;
 }
+
+#sec_ctd h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+#sec_ctd {
+  text-align: justify;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 #principal {
   display: flex;
   align-items: center;
-  padding: 10 10 10 10;
+  padding: 50px 80px;
 }
 
 #principal figure {
   margin-right: 30px;
 }
+
 #principal img {
   max-width: 300px;
-
 }
+
 #second {
   display: flex;
   justify-content: center;
-  gap: 20px; 
-  margin: 20px 0; 
+  gap: 5px;
+  margin: 20px 0;
 }
+
 .cartaz {
-  text-align: center; 
+  text-align: center;
+  margin: 0 40px;
 }
 
 .capa {
-  width: 200px;
+  width: 300px;
   height: auto;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#descricao {
+  border: 1px solid rgb(27, 26, 26); 
+  padding: 10px;
+  padding-right: 400px;
 }
 
 footer {
   background-color: #333;
-  color: #ddd;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
+#email {
+  flex: 1;
+  text-align: left;
+  align-items: center;
+}
+
+#email a {
+  color: white;
+  text-decoration: none;
+}
+
+#social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+#social img {
+  width: 30px;
+  justify-content: right;
+}
+
+#acesso {
+  font-family: 'Amatic SC', cursive;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+#acesso a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
